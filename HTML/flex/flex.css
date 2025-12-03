@@ -1,0 +1,22 @@
+.flexContainer {
+    border: 1px solid red;
+    display: flex;
+
+    height: 90vh;
+    gap: 10px;
+    align-items: center;
+
+    justify-content: center;
+    /*center, flex-start, flex-end, space-around, space-between, space-evenly*/
+    flex-direction: row;
+    /*row, reverse-row, column, reverse-column*/
+}
+
+.flexItem{
+    background-color: yellow;
+    border: 2px solid red;
+    color: red;
+    font-size: 24px;
+    height: 60px;
+    width: 80px;
+}
