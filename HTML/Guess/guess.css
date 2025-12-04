@@ -3,6 +3,7 @@
     padding: 0;
 }
 body{
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
     grid-template-areas:
@@ -10,7 +11,6 @@ body{
         "main aside" ;
     background-color: black;
     color: white;
-    display: grid;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -22,6 +22,7 @@ header{
 
 main{
     grid-area: main;
+    align-self: center;
 }
 
 aside{
@@ -43,4 +44,5 @@ aside{
 
 .between{
     text-align: right;
+    align-self: center;
 }
