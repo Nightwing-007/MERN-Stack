@@ -17,7 +17,11 @@ let scr = 20;
 
 checkBtn.addEventListener("click", () => {
     console.log(randomNumber);
-    if(guess.value < 1 || guess.value > 20) {
+    if(!guess.value){
+        alert("Please enter a number!");
+        msg.textContent = "No Number";
+    }
+    else if(guess.value < 1 || guess.value > 20) {
         msg.textContent = "Invalid guess";
     }
     else if(guess.value == randomNumber) {
@@ -47,7 +51,7 @@ againBtn.addEventListener("click", () => {
     score.textContent = scr;
     number.textContent = "?";
     body.style.backgroundColor = "black";
-    guess.value = 0;
+    guess.value = "";
     rand();
     guess.disabled = false;
     checkBtn.disabled = false;
